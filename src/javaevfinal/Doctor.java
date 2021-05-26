@@ -11,7 +11,12 @@ package javaevfinal;
  */
 public class Doctor {
     int id;
-    String name;
+    String DrName;
+
+    public Doctor(int id, String DrName) {
+        this.id = id;
+        this.DrName = DrName;
+    }
 
     public int getId() {
         return id;
@@ -21,18 +26,15 @@ public class Doctor {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getDrName() {
+        return DrName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDrName(String DrName) {
+        this.DrName = DrName;
     }
 
-    public Doctor(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+
     
     
 }
