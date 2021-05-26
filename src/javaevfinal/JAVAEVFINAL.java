@@ -126,17 +126,17 @@ public class JAVAEVFINAL {
        
     }}
     public void relacionarCitas() throws FileNotFoundException{
-        int idDoc, idPac, idCita;
+        int idDoc, idPacient, idCita;
         System.out.println("Ingrese ID de Doctor");
         idDoc = sc.nextInt();
         System.out.println("Ingrese ID de Paciente");
-        idPac = sc.nextInt();
+        idPacient = sc.nextInt();
         System.out.println("Ingrese ID de Cita");
         idCita = sc.nextInt();
         System.out.println("Datos guardados");
         try (PrintWriter out = new PrintWriter("filenameRelacionados.txt")) {
         out.println(idDoc);
-        out.println(idPac);
+        out.println(idPacient);
         out.println(idCita);
         
         
