@@ -107,36 +107,36 @@ public class JAVAEVFINAL {
         System.out.println("Ingrese nombre del Paciente");
         name=sc.next();
         Paciente paciente = new Paciente(id, name);
-        try (PrintWriter out = new PrintWriter("filenamePacientes.txt")) {
+        try (PrintWriter out = new PrintWriter("Pacientes.txt")) {
         out.println(id);
         out.println(name);
     }}
     
     public void crearCitas() throws FileNotFoundException{
         int id;
-        String dates;
+        String dat;
         System.out.println("Ingrese Id de cita");
         id=sc.nextInt();
         System.out.println("Ingrese fecha de cita");
-        dates=sc.next();
-        Cita cita = new Cita(id, dates);
-               try (PrintWriter out = new PrintWriter("filenameCitas.txt")) {
+        dat=sc.next();
+        Cita cita = new Cita(id, dat);
+               try (PrintWriter out = new PrintWriter("Citas.txt")) {
         out.println(id);
-        out.println(dates);
+        out.println(dat);
        
     }}
     public void relacionarCitas() throws FileNotFoundException{
-        int idDoc, idPac, idCita;
+        int idDoc, idPacient, idCita;
         System.out.println("Ingrese ID de Doctor");
         idDoc = sc.nextInt();
         System.out.println("Ingrese ID de Paciente");
-        idPac = sc.nextInt();
+        idPacient = sc.nextInt();
         System.out.println("Ingrese ID de Cita");
         idCita = sc.nextInt();
         System.out.println("Datos guardados");
         try (PrintWriter out = new PrintWriter("filenameRelacionados.txt")) {
         out.println(idDoc);
-        out.println(idPac);
+        out.println(idPacient);
         out.println(idCita);
         
         
