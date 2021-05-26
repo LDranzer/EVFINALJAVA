@@ -11,11 +11,11 @@ package javaevfinal;
  */
 public class Paciente {
     int id;
-    String name;
+    String namePat;
 
     public Paciente(int id, String name) {
         this.id = id;
-        this.name = name;
+        this.namePat = name;
     }
 
     public int getId() {
@@ -27,11 +27,11 @@ public class Paciente {
     }
 
     public String getName() {
-        return name;
+        return namePat;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.namePat = name;
     }
     
     

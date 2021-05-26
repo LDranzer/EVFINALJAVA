@@ -107,7 +107,7 @@ public class JAVAEVFINAL {
         System.out.println("Ingrese nombre del Paciente");
         name=sc.next();
         Paciente paciente = new Paciente(id, name);
-        try (PrintWriter out = new PrintWriter("filenamePacientes.txt")) {
+        try (PrintWriter out = new PrintWriter("Pacientes.txt")) {
         out.println(id);
         out.println(name);
     }}
