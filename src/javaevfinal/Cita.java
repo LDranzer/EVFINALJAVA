@@ -11,11 +11,11 @@ package javaevfinal;
  */
 public class Cita {
     int id;
-    String day;
+    String fecha;
 
     public Cita(int id, String day) {
         this.id = id;
-        this.day = day;
+        this.fecha = day;
     }
 
     public int getId() {
@@ -27,11 +27,11 @@ public class Cita {
     }
 
     public String getDay() {
-        return day;
+        return fecha;
     }
 
     public void setDay(String day) {
-        this.day = day;
+        this.fecha = day;
     }
     
     

@@ -114,15 +114,15 @@ public class JAVAEVFINAL {
     
     public void crearCitas() throws FileNotFoundException{
         int id;
-        String dates;
+        String dat;
         System.out.println("Ingrese Id de cita");
         id=sc.nextInt();
         System.out.println("Ingrese fecha de cita");
-        dates=sc.next();
-        Cita cita = new Cita(id, dates);
-               try (PrintWriter out = new PrintWriter("filenameCitas.txt")) {
+        dat=sc.next();
+        Cita cita = new Cita(id, dat);
+               try (PrintWriter out = new PrintWriter("Citas.txt")) {
         out.println(id);
-        out.println(dates);
+        out.println(dat);
        
     }}
     public void relacionarCitas() throws FileNotFoundException{
